@@ -13,7 +13,7 @@ const ClockWrapper = ({timeSize}) => {
   return (
     <div className='w-50 h-full m-auto my-5'>
         {/* <p>Time:</p>  */}
-        <Clock className={`w-20 h-20 font-extrabold ${timeSize? timeSize: ''} text-indigo-300`}
+        <Clock hour12={false} className={`w-20 h-20 font-extrabold ${timeSize? timeSize: ''} text-indigo-500`}
           ticking={ticking}
           format={format}/>
     </div>

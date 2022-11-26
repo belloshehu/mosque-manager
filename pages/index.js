@@ -9,7 +9,7 @@ const Home = ({mosqueData, prayerData}) => {
   const {name, image, city, country, address} = mosqueData[0]
   console.log(image)
   return (
-    <div className='flex flex-col items-center justify-center bg-slate-200 py-5'>
+    <div className='flex flex-col items-center justify-center bg-slate-00 py-5 gap-3'>
       <img src={urlFor(image[0])} alt={name} className='w-2/6 h-2/6'/>
       <h1 className='text-center text-gray-500 text-lg font-extrabold bg-slate-200 p-5 mt-5 w-full md:w-1/2'>{`${name} mosque`  || 'Mosque name'}</h1>
       <div className='shadow-sm flex flex-col gap-2 justify-center w-full p-2 md:w-2/3 md:flex-row md:p-5 bg-slate-100 '>
@@ -17,7 +17,7 @@ const Home = ({mosqueData, prayerData}) => {
           <p className='flex gap-2 items-center bg-slate-200 p-2'><FaCity className='text-indigo-300'/> {city}</p>
           <p className='flex gap-2 items-center bg-slate-200 p-2'><FaCity className='text-indigo-300'/> {country}</p>
       </div>
-      {/* <Timetable prayers={prayerData}/> */}
+      <Timetable prayers={prayerData}/>
     </div>
   )
 }
