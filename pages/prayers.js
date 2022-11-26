@@ -7,8 +7,8 @@ import Prayer from '../components/Prayer'
 const prayers = ({prayerData}) => {
   
   return (
-    <div className='flex flex-col items-center gap-2'>
-      <ClockWrapper />
+    <div className='flex flex-col items-center gap-3'>
+      {/* <ClockWrapper /> */}
       {/* <Timetable prayers={prayerData}/> */}
       {
         prayerData.map(prayer => <Prayer prayer={prayer}/>)

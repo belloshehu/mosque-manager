@@ -1,30 +1,33 @@
 import React from 'react'
+import { FaPray } from 'react-icons/fa'
+import { HiSpeakerphone } from 'react-icons/hi'
+import PrayerTime from './PrayerTime'
 
 const Timetable = ({prayers}) => {
   return (
-    <div className='m-auto'>
-        <table className='table-auto p-5 border text-xl shadow-lg text-slate-500'>
-            <thead className='bg-slate-300'>
-                <tr className=''>
-                    <th className='border border-slate-300 p-3 text-center'>Prayer</th>
-                    <th className='border border-slate-300 p-3 text-center'>Adhan Time</th>
-                    <th className='border border-slate-300 p-3 text-center'>Iqaama Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                   
-                   prayers.map(prayer =>
-                    <tr className='border border-slate-300 p-3 text-center hover:bg-slate-100'>
-                        <td className='border border-slate-300 p-3 text-center'>{prayer.name.charAt(0).toUpperCase() + prayer.name.slice(1)}</td>
-                        <td className='border border-slate-300 p-3 text-center'>{prayer.adhanTime.split('T')[1].split('.')[0].slice(0, 5)}</td>
-                        <td className='border border-slate-300 p-3 text-center'>{prayer.iqamaTime.split('T')[1].split('.')[0].slice(0, 5)}</td>
-                    </tr>
-                   ) 
-                }
-            </tbody>
-        </table>
-    </div>
+    <>
+        <div className='w-full md:w-2/3 grid grid-rows-7 grid-cols-1 bg-slate-300 border border-red-1 text-white p-2 rounded-md content-center '>
+            {/*  row 1 */}
+            <div className='grid grid-cols-3 grid-rows-1 items-center text-xl justify-start'>
+                <div className='border-r-2 border-slate-500 flex items-center gap-2 justify-center'>
+                    <h2>Prayer</h2>
+                </div>
+                
+                <div className='border-r-2 border-slate-500 flex items-center gap-2 justify-center'>
+                    <HiSpeakerphone />
+                    <h2>Adhaan</h2>
+                </div>
+                <div className='flex items-center gap-2 justify-center'>
+                    <FaPray />
+                    <h2 className='text-center'>Iqaama</h2>
+                </div>
+            </div>
+            {
+                prayers.map(prayer => <PrayerTime {...prayer} key={prayer?._id}/>)
+            }
+        </div>
+    </>
+
   )
 }
 

@@ -8,7 +8,7 @@ const Header = ({brandName, setToggleSidebar}) => {
   }
 
   return (
-    <header className='flex w-full bg-slate-200 px-5 p-5 md:px-10 h-20 items-center justify-between'>
+    <header className='flex w-full h-20 bg-slate-200 px-5 p-5 md:px-10 items-center justify-between'>
         <FaBars className='lg:hidden text-4xl' onClick={handleMenubarClick}/>
         <h1 className='md:text-4xl md:font-bold text-xl font-semibold text-indigo-500 capitalize'>
             {brandName} mosque
