@@ -14,11 +14,15 @@
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.3",
     "next": "13.0.3",
+    "next-sanity-image": "^5.0.0",
     "react": "18.2.0",
     "react-clock": "^4.0.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
-    "react-live-clock": "^6.0.7"
+    "react-live-clock": "^6.0.7",
+    "react-loader-spinner": "^5.3.4",
+    "react-simple-typewriter": "^5.0.1",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

@@ -73,7 +73,7 @@ const NotificationForm = () => {
                     />
                 </div>
                 <div className='flex flex-col gap-1 w-full text-left'>
-                    {/* <label htmlFor="email">Email</label> */}
+                    <label htmlFor="email">Email</label>
                     <input 
                         type="email" 
                         id='email' 
