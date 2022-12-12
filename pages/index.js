@@ -45,7 +45,7 @@ const Home = ({mosqueData, prayerData, programData}) => {
           <div className='md:w-1/2 w-full p-0' >
             <TypewriterText  wordList={[`${name} mosque `]}  className='text-5xl md:2xl'/>
             <p className='text-center md:text-left text-slate-600 pt-5 md:pt-0 md:pr-5'>
-              We help you minimize missing of prayers and program bykeeping you upto date with prayer time, programs and events.
+              We help you minimize missing of prayers, programs and events by keeping you upto date through email and SMS notifications.
             </p>
           </div>
           <Image 
@@ -67,7 +67,7 @@ const Home = ({mosqueData, prayerData, programData}) => {
         <h3 className='text-3xl text-white font-extrabold'>Programs</h3>
         <p className='text-slate-300 my-5'>Various programs for adults and children</p>
         <ProgramList programs={programData} />
-        <Link className='p-2 round shadow-lg text-white bg-black w-full rounded-md' href={'./programs'}>more ...</Link>
+        <Link className='p-2 px-5 round shadow-lg text-white bg-black w-full md:w-fit rounded-md' href={'./programs'}>more ...</Link>
       </div>
 
       

@@ -14,7 +14,8 @@ const TypewriterText = ({wordList}) => {
                 Welcome to 
             </h1>
             <h1 className='text-indigo-600  text-6xl md:text-5xl font-extrabold align-bottom'>
-                {text}|
+                {text}
+                <span className='text-black text-md font-normal'>|</span>
             </h1>
         </div>
     )
