@@ -23,8 +23,8 @@ export default {
             type: 'datetime'
         },
         {
-            name: 'endTime',
-            title: 'EndTime',
+            name: 'stopTime',
+            title: 'StopTime',
             type: 'datetime'
         },
         {
@@ -47,6 +47,18 @@ export default {
             name: 'description',
             title: 'Description',
             type: 'string'
+        },
+        {
+            name: 'lecturer',
+            title: 'Lecturer',
+            type: 'string'
+        },
+        {
+            name: 'lecturerImage',
+            title: 'LecturerImage',
+            type: 'image'
         }
+        
+        
     ]
 }

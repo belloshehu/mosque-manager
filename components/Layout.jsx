@@ -10,7 +10,7 @@ const Layout = ({children}) => {
     const [toggleSidebar, setToggleSidebar] = useState(false)
 
     return (
-        <div className="flex w-screen h-full bg-gray-100 flex-col relative items-center justify-center text-center leading-7 md:w-2/3 overflow-x-hidden m-auto mt-0">
+        <div className="flex w-screen h-full bg-gray-100 flex-col relative items-center justify-center text-center leading-7 md:w-full overflow-x-hidden m-auto mt-0">
             <Header setToggleSidebar={setToggleSidebar}/>
             <section className='flex w-full h-full'>
                 {toggleSidebar && <Menubar setToggleSidebar={setToggleSidebar} />}
